@@ -13,7 +13,7 @@ class Bsort{
 		}
 	}
 }
-public class bubblesort{
+public class bubbleSort{
 	public static void main(String[] args){
 		int [] arr = new int[20];
 		int n;
