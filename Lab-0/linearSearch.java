@@ -15,7 +15,7 @@ class Lsearch{
 		}
 	}
 }
-public class LinearSearch{
+public class linearSearch{
 	public static void main(String[] args){
 		int [] arr=new int[20];
 		int n;
