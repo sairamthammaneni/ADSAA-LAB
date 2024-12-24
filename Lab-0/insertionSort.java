@@ -14,7 +14,7 @@ class Insort{
 		}
 	}
 }
-public class insort{
+public class insertionSort{
 	public static void main(String[] args){
 		int [] arr = new int[20];
 		int n;
