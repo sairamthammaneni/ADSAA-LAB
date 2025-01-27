@@ -30,6 +30,6 @@ public class binarySearch{
 		if(pos==-1)
 			System.out.println("Search unsuccesful,Key not found");
 		else
-			System.out.println("Search is succesful,Key not found at index "+pos);
+			System.out.println("Search is succesful,Key is found at index "+pos);
 	}
 }
