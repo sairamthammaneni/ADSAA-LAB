@@ -44,32 +44,44 @@ public class QuickSort {
     // Driver method to test the sorting and measure execution time
     public static void main(String[] args) {
         Random rand = new Random();
-        
+    
         // Average case: Random array
-        int[] avgArr = rand.ints(1000, 0, 10000).toArray();
+        int[] avgArr = rand.ints(25, 0, 100).toArray();
+        System.out.println("Average Case (Before Sorting):");
+        printArray(avgArr);  // Display the array before sorting
         long startTime = System.nanoTime();
         quickSort(avgArr, 0, avgArr.length - 1);
         long endTime = System.nanoTime();
         System.out.println("QuickSort (Average Case) Time: " + (endTime - startTime) + " ns");
-
+        System.out.println("Average Case (After Sorting):");
+        printArray(avgArr);  // Display the array after sorting
+    
         // Worst case: Sorted in descending order
-        int[] worstArr = new int[1000];
+        int[] worstArr = new int[25];
         for (int i = 0; i < worstArr.length; i++) {
-            worstArr[i] = 10000 - i;
+            worstArr[i] = 100 - i;
         }
+        System.out.println("Worst Case (Before Sorting):");
+        printArray(worstArr);  // Display the array before sorting
         startTime = System.nanoTime();
         quickSort(worstArr, 0, worstArr.length - 1);
         endTime = System.nanoTime();
         System.out.println("QuickSort (Worst Case) Time: " + (endTime - startTime) + " ns");
-
+        System.out.println("Worst Case (After Sorting):");
+        printArray(worstArr);  // Display the array after sorting
+    
         // Best case: Sorted array
-        int[] bestArr = new int[1000];
+        int[] bestArr = new int[25];
         for (int i = 0; i < bestArr.length; i++) {
             bestArr[i] = i;
         }
+        System.out.println("Best Case (Before Sorting):");
+        printArray(bestArr);  // Display the array before sorting
         startTime = System.nanoTime();
         quickSort(bestArr, 0, bestArr.length - 1);
         endTime = System.nanoTime();
         System.out.println("QuickSort (Best Case) Time: " + (endTime - startTime) + " ns");
+        System.out.println("Best Case (After Sorting):");
+        printArray(bestArr);  // Display the array after sorting
     }
 }
