@@ -3,21 +3,18 @@ import java.util.List;
 
 class DFS {
     // Recursive function for DFS traversal
- static void dfsRec(List<List<Integer> > adj, boolean[] visited, int s)
-{
- // Mark the current vertex as visited
- visited[s] = true;
- // Print the current vertex
- System.out.print(s + " ");
- // Recursively visit all adjacent vertices that are not visited yet
- for (int i : adj.get(s))
-{
- if (!visited[i])
-{
- dfsRec(adj, visited, i);
- }
- }
- }
+    static void dfsRec(List<List<Integer>> adj, boolean[] visited, int s) {
+        // Mark the current vertex as visited
+        visited[s] = true;
+        // Print the current vertex
+        System.out.print(s + " ");
+        // Recursively visit all adjacent vertices that are not visited yet
+        for (int i : adj.get(s)) {
+            if (!visited[i]) {
+                dfsRec(adj, visited, i);
+            }
+        }
+    }
 
     static void dfs(List<List<Integer>> adj, int s) {
         boolean[] visited = new boolean[adj.size()];
