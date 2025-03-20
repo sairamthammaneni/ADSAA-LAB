@@ -1,0 +1,12 @@
+vitcse@vitcse-ThinkCentre-M70t-Gen-4:~/Documents/ADSAA LAB$ javac GFG.java
+vitcse@vitcse-ThinkCentre-M70t-Gen-4:~/Documents/ADSAA LAB$ java GFG
+Vertex   Distance from Source
+0         0
+1         4
+2         12
+3         19
+4         21
+5         11
+6         9
+7         8
+8         14
